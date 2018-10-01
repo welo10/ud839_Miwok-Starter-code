@@ -1,0 +1,2 @@
+include ':app'
+project(':app').projectDir = new File('ud839_Miwok-Starter-code/app')
