@@ -33,4 +33,16 @@ public void onumbers (View v){
     Intent i = new Intent(this,numbers.class);
     startActivity(i);
 }
+    public void ofamily (View v){
+        Intent i = new Intent(this,family.class);
+        startActivity(i);
+    }
+    public void ophrases (View v){
+        Intent i = new Intent(this,phrases.class);
+        startActivity(i);
+    }
+    public void ocolors (View v){
+        Intent i = new Intent(this,colors.class);
+        startActivity(i);
+    }
 }

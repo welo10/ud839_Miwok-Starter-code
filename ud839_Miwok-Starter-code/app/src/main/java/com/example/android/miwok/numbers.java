@@ -18,13 +18,13 @@ public class numbers extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
    //     String[] num={"one","two","three","four","five","six","seve","eight","nine","ten"};
         ArrayList<word> num= new ArrayList<word>(){{
-            add(new word("one", "lutti")); add(new word("two", "otiiko"));add(new word("three", "tolookosu"));add(new word("four", "oyyisa"));add(new word("five", "massokka"));
-            add(new word("six", "temmokka")); add(new word("seven", "kenekaku"));add(new word("eight", "kawinta"));add(new word("nine", "wo'e"));add(new word("ten", "na’aacha"));
+            add(new word("one", "lutti",R.mipmap.ic_launcher)); add(new word("two", "otiiko",R.mipmap.ic_launcher));add(new word("three", "tolookosu",R.mipmap.ic_launcher));add(new word("four", "oyyisa",R.mipmap.ic_launcher));add(new word("five", "massokka",R.mipmap.ic_launcher));
+            add(new word("six", "temmokka",R.mipmap.ic_launcher)); add(new word("seven", "kenekaku",R.mipmap.ic_launcher));add(new word("eight", "kawinta",R.mipmap.ic_launcher));add(new word("nine", "wo'e",R.mipmap.ic_launcher));add(new word("ten", "na’aacha",R.mipmap.ic_launcher));
 
         }};
         Log.v("numbers","word at list[0]"+num.get(0));
         Log.v("numbers","word at list[1]"+num.get(1));
-        wordAdapter itemsAdapter = new wordAdapter(this, num);
+        wordAdapter itemsAdapter = new wordAdapter(this, num,R.color.category_colors);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
